@@ -1,10 +1,11 @@
+package edu.seminolestate.cen4802;
 public class FibonacciApp {
 
     public static void main(String[] args) {
         int term = 10;
         int result = fibonacci(term);
 
-        System.out.println("The " + term + "th term of the Fibonacci sequence is " + result + ".");
+        System.out.println("Revised output after rebuilding with Maven, the " + term + "th term of the Fibonacci sequence is " + result + ".");
     }
 
     /**
