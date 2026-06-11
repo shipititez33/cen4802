@@ -5,7 +5,7 @@ public class FibonacciApp {
         int term = 10;
         int result = fibonacci(term);
 
-        System.out.println("Revised output after rebuilding with Maven, the " + term + "th term of the Fibonacci sequence is " + result + ".");
+        System.out.println("Jenkins CI build verified: the " + term + "th term of the Fibonacci sequence is " + result + ".");
     }
 
     /**
