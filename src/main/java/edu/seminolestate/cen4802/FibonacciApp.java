@@ -5,7 +5,7 @@ public class FibonacciApp {
         int term = 10;
         int result = fibonacci(term);
 
-        System.out.println("Jenkins CI build verified: the " + term + "th term of the Fibonacci sequence is " + result + ".");
+        System.out.println("Docker container verified: the " + term + "th term of the Fibonacci sequence is " + result + ".");
     }
 
     /**
