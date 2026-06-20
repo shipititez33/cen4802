@@ -5,7 +5,7 @@ public class FibonacciApp {
         int term = 10;
         int result = fibonacci(term);
 
-        System.out.println("Midterm pipeline verified:: the " + term + "th term of the Fibonacci sequence is " + result + ".");
+        System.out.println("Midterm project pipeline verified:: the " + term + "th term of the Fibonacci sequence is " + result + ".");
     }
 
     /**
