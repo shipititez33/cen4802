@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cen4802-fibonacci-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: cen4802-fibonacci
+  template:
+    metadata:
+      labels:
+        app: cen4802-fibonacci
+    spec:
+      containers:
+        - name: cen4802-fibonacci
+          image: cen4802-fibonacci:latest
+          imagePullPolicy: Never
+          command: ["sh", "-c"]
+          args: ["java -jar app.jar && sleep 3600"]
