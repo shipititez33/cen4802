@@ -16,6 +16,8 @@ public class FibonacciApp {
     public static void main(String[] args) {
         configureLogging();
 
+        System.out.println("CEN4802 application version 2 started.");
+
         logger.info("Application started.");
 
         int term = 10;
