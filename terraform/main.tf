@@ -10,11 +10,17 @@ terraform {
 provider "docker" {}
 
 resource "docker_image" "cen4802" {
-  name         = "cen4802:latest"
+  name         = var.image_name
   keep_locally = true
 }
 
 resource "docker_container" "cen4802" {
   image = docker_image.cen4802.image_id
   name  = var.container_name
+
+  command = [
+    "sh",
+    "-c",
+    "java -jar app.jar && sleep 3600"
+  ]
 }
